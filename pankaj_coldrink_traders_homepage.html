@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0756a5">
+<meta name="description" content="Pankaj Coldrink Traders wholesale beverage ordering.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>Pankaj Coldrink Traders | Wholesale Orders</title>
+<style>
+:root{--blue:#0756a5;--deep:#06366d;--light:#eaf4ff;--red:#d62828;--ink:#172536;--muted:#617286}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f8fc;color:var(--ink)}
+header{background:linear-gradient(120deg,var(--deep),var(--blue));color:white;padding:25px 18px 30px}
+.wrap{max-width:1050px;margin:auto}.top{display:flex;align-items:center;gap:14px}
+.logo{width:58px;height:58px;border-radius:15px;background:white;color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:22px;flex-shrink:0}
+h1{font-size:clamp(21px,4vw,30px);margin:0 0 5px}.tag{margin:0;color:#dcecff;font-size:14px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}nav a{color:white;text-decoration:none;border:1px solid #ffffff70;padding:9px 13px;border-radius:20px;font-size:14px}
+main{max-width:1050px;margin:22px auto;padding:0 16px}
+.notice{background:#fff7df;border:1px solid #f0d58a;padding:12px 14px;border-radius:12px;font-size:13px;line-height:1.5;margin-bottom:20px}
+h2{font-size:21px;margin:22px 0 12px}.sub{color:var(--muted);font-size:14px;margin-top:-5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}\n.card{overflow:hidden;padding:0}.card-body{padding:15px 17px 17px}.photo{width:100%;height:155px;object-fit:contain;background:#fff;padding:10px}.brands{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.brand{font-size:12px;background:#edf4fb;color:#174d80;border:1px solid #d9e7f5;padding:6px 9px;border-radius:20px}.stock-note{font-size:11px!important;color:#8a5b00!important;margin-top:9px!important}
+.size-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;margin-top:12px}
+.size-card{background:#fff;border:1px solid #dfe9f3;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px #183b5b0a}
+.size-card img{display:block;width:100%;height:165px;object-fit:contain;padding:9px;background:#f8fbff}
+.size-card div{padding:10px 12px;border-top:1px solid #edf1f5}
+.size-card b{display:block;color:#0756a5;font-size:16px;margin-bottom:4px}
+.size-card span{display:block;color:#617286;font-size:11px;line-height:1.35}
+
+.card{background:white;border:1px solid #e0e9f2;border-radius:16px;padding:17px;box-shadow:0 4px 15px #183b5b0a}
+.icon{height:90px;border-radius:12px;background:var(--light);display:grid;place-items:center;font-size:43px;margin-bottom:13px}
+.card h3{margin:0 0 5px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
+.badge{display:inline-block;margin-top:10px;background:#edf5ff;color:var(--blue);padding:5px 9px;border-radius:20px;font-size:12px;font-weight:bold}
+.panel{background:white;border:1px solid #e0e9f2;border-radius:16px;padding:18px;margin-top:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;font-size:13px;font-weight:bold;margin:12px 0 6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccd8e5;border-radius:9px;font:inherit;background:#fff}
+button{border:0;border-radius:10px;background:var(--blue);color:white;padding:12px 16px;font-weight:bold;cursor:pointer}
+button:hover{background:var(--deep)}.secondary{background:#eaf2fb;color:var(--blue)}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.item{border:1px solid #e0e9f2;border-radius:12px;padding:13px}
+.item strong{display:block;margin-bottom:5px}.item small{color:var(--muted)}
+.item input{margin-top:9px}
+.summary{background:#f5f9fe;border-radius:12px;padding:13px;margin-top:14px;font-size:14px;line-height:1.7}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:25px 15px}
+@media(max-width:620px){.row{grid-template-columns:1fr}.top{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div class="logo">PCT</div>
+      <div><h1>PANKAJ COLDRINK TRADERS</h1><p class="tag">Your Local Wholesale Beverage Supplier</p></div>
+    </div>
+    <nav><a href="#categories">Products</a><a href="#order">Place an Order</a><a href="#delivery">Delivery Areas</a></nav>
+  </div>
+</header>
+<main>
+  <div class="notice"><strong>Wholesale ordering demo:</strong> Product rates and stock will be added by the business. Delivery charges depend on delivery area, distance and order quantity; the team will confirm the final charge before accepting the order.</div>
+
+  <section id="categories">
+    <h2>Shop by Category</h2>
+    <p class="sub">Browse the main categories and the brands/products that may be available in current stock.</p>
+    <div class="grid">
+      <article class="card">
+        <img class="photo" src="https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1781516241787-36.jpg" alt="Bisleri packaged drinking water bottle" loading="lazy">
+        <div class="card-body">
+          <h3>Bisleri Water</h3>
+          <p>Bisleri packaged drinking water in available case sizes.</p>
+          <div class="brands"><span class="brand">250 ml</span><span class="brand">500 ml</span><span class="brand">1 L</span><span class="brand">2 L</span><span class="brand">10 L</span></div>
+          <span class="badge">Wholesale orders</span>
+        </div>
+      </article>
+      <article class="card">
+        <img class="photo" src="https://cpimg.tistatic.com/10523457/b/4/500-ml-aquafast-packaged-drinking-water.jpg" alt="Packaged drinking water bottle, illustrative local-water image" loading="lazy">
+        <div class="card-body">
+          <h3>Local Water</h3>
+          <p>Local packaged-water brands carried by the shop.</p>
+          <div class="brands"><span class="brand">Local brand 1</span><span class="brand">Other local brands</span></div>
+          <p class="stock-note">Brand names and photos will be updated according to actual stock.</p>
+          <span class="badge">Wholesale orders</span>
+        </div>
+      </article>
+      <article class="card">
+        <img class="photo" src="https://cdn.grofers.com/app/images/products/sliding_image/23691a.jpg?ts=1687948395" alt="Pepsi soft drink bottle" loading="lazy">
+        <div class="card-body">
+          <h3>Pepsi &amp; PepsiCo</h3>
+          <p>Pepsi and other beverage brands only when available in current stock.</p>
+          <div class="brands"><span class="brand">Pepsi</span><span class="brand">Mountain Dew*</span><span class="brand">Slice*</span><span class="brand">Tropicana*</span></div>
+          <p class="stock-note">*Show these only when stocked. 7UP, Mirinda and Sting are not listed.</p>
+          <span class="badge">Wholesale orders</span>
+        </div>
+      </article>
+      <article class="card">
+        <img class="photo" src="https://www.bbassets.com/media/uploads/p/xxl/251023_11-coca-cola-soft-drink-original-taste.jpg" alt="Coca-Cola soft drink bottle" loading="lazy">
+        <div class="card-body">
+          <h3>Coca-Cola &amp; its brands</h3>
+          <p>Coca-Cola and other beverage brands, depending on available stock.</p>
+          <div class="brands"><span class="brand">Coca-Cola</span><span class="brand">Thums Up*</span><span class="brand">Sprite*</span><span class="brand">Fanta*</span><span class="brand">Limca*</span><span class="brand">Maaza*</span></div>
+          <p class="stock-note">*Show these only when stocked. Papa can update the available brand list.</p>
+          <span class="badge">Wholesale orders</span>
+        </div>
+      </article>
+    </div>
+
+    <h2 style="font-size:19px;margin-top:25px">Bisleri – Select by Size</h2>
+    <p class="sub">Official Bisleri product photos. Case/pack details shown where listed by the brand; your shop's stock and pack quantities will be confirmed by Papa.</p>
+    <div class="size-grid">
+      <article class="size-card"><img src="https://www.bisleri.com/on/demandware.static/-/Sites-Bis-Catalog/default/dwe1a6e391/Product%20Images_Desktop/Bisleri/Bisleri250ml/288/PDP/Bisleri_Ecom_Web_250ml_01.png" alt="Bisleri 250 ml bottle"><div><b>250 ml</b><span>Pack/case details to confirm</span></div></article>
+      <article class="size-card"><img src="https://www.bisleri.com/on/demandware.static/-/Sites-Bis-Catalog/default/dwd78b6fa8/Product%20Images_Desktop/Bisleri/Bisleri500ml/PDP/Bisleri_Ecom_Web_500ml_01.png" alt="Bisleri 500 ml bottle"><div><b>500 ml</b><span>24 bottles per case (confirm shop pack)</span></div></article>
+      <article class="size-card"><img src="https://www.bisleri.com/on/demandware.static/-/Sites-Bis-Catalog/default/dw1f4347ca/Product%20Images_Desktop/Bisleri/Bisleri1Litre/PDP/Bisleri_E-com_Web_Creative_PDP_Bisleri_1Ltr_01.png" alt="Bisleri 1 litre bottle"><div><b>1 L</b><span>12 bottles per case (confirm shop pack)</span></div></article>
+      <article class="size-card"><img src="https://www.bisleri.com/on/demandware.static/-/Sites-Bis-Catalog/default/dw5806b3ef/Product%20Images_Desktop/Bisleri/Bisleri2Litre/PDP/Bisleri_E-com_Web_Creative_PDP_Bisleri_2Ltr_01.png" alt="Bisleri 2 litre bottle"><div><b>2 L</b><span>9 bottles per case (confirm shop pack)</span></div></article>
+      <article class="size-card"><img src="https://www.bisleri.com/on/demandware.static/-/Sites-Bis-Catalog/default/dw400e425c/Product%20Images_Desktop/Bisleri/Bisleri10Litre/PDP/Bisleri_E-com_Web_Creative_PDP_Bisleri_10Ltr_01.png" alt="Bisleri 10 litre jar"><div><b>10 L</b><span>1 jar</span></div></article>
+    </div>
+
+    <p class="sub" style="margin-top:12px">Bisleri size-wise images are from the official Bisleri product catalogue. Other category photos are representative. Only products confirmed in current shop stock should be offered for ordering.</p>
+  </section>
+
+  <section id="order" class="panel">
+    <h2>Place a Wholesale Order</h2>
+    <p class="sub">Enter your details and the case quantities you need.</p>
+    <div class="row">
+      <div><label for="name">Customer / Shop name</label><input id="name" placeholder="Enter name"></div>
+      <div><label for="phone">Mobile number</label><input id="phone" inputmode="tel" placeholder="Enter mobile number"></div>
+    </div>
+    <label for="area">Delivery area</label>
+    <select id="area">
+      <option value="">Select your area</option>
+      <option>Kalyanpur</option><option>Awas Vikas</option><option>Panki</option>
+      <option>Keshavpuram</option><option>IIT Kanpur Area</option><option>Indira Nagar</option>
+    </select>
+    <label for="address">Full delivery address</label><textarea id="address" rows="2" placeholder="House/shop number, landmark and address"></textarea>
+
+    <h2 style="font-size:17px">Select products</h2>
+    <div class="products">
+      <div class="item"><strong>Bisleri Water</strong><small>Case quantity</small><input type="number" min="0" step="1" value="0" data-product="Bisleri Water"></div>
+      <div class="item"><strong>Local Water</strong><small>Case quantity</small><input type="number" min="0" step="1" value="0" data-product="Local Water"></div>
+      <div class="item"><strong>Pepsi</strong><small>Case quantity</small><input type="number" min="0" step="1" value="0" data-product="Pepsi"></div>
+      <div class="item"><strong>Coca-Cola</strong><small>Case quantity</small><input type="number" min="0" step="1" value="0" data-product="Coca-Cola"></div>
+    </div>
+    <label for="notes">Additional details (optional)</label><textarea id="notes" rows="2" placeholder="Brand/size preference or delivery instructions"></textarea>
+    <div class="summary" id="summary">Selected cases: 0<br>Product prices: To be confirmed by Pankaj Coldrink Traders<br>Delivery charge: Calculated according to location and order quantity<br><strong>Final bill: Will be confirmed before order acceptance</strong></div>
+    <p style="font-size:12px;color:#617286">This is a preview form only. It does not yet send orders to the shop.</p>
+    <button type="button" onclick="previewOrder()">Review order details</button>
+    <button type="button" class="secondary" onclick="window.print()">Print this page</button>
+  </section>
+
+  <section id="delivery" class="panel">
+    <h2>Delivery Areas</h2>
+    <p>Kalyanpur · Awas Vikas · Panki · Keshavpuram · IIT Kanpur Area · Indira Nagar</p>
+    <p class="sub">Delivery availability and charges are confirmed by the team based on distance and total order quantity.</p>
+  </section>
+</main>
+<footer>© PANKAJ COLDRINK TRADERS · Wholesale beverage orders</footer>
+<script>
+function updateSummary(){
+ const inputs=[...document.querySelectorAll('[data-product]')];
+ const total=inputs.reduce((s,i)=>s+(Math.max(0,parseInt(i.value)||0)),0);
+ document.getElementById('summary').innerHTML=
+ `Selected cases: <strong>${total}</strong><br>Product prices: To be confirmed by Pankaj Coldrink Traders<br>Delivery charge: Calculated according to location and order quantity<br><strong>Final bill: Will be confirmed before order acceptance</strong>`;
+}
+document.querySelectorAll('[data-product]').forEach(i=>i.addEventListener('input',updateSummary));
+function previewOrder(){
+ const name=document.getElementById('name').value.trim();
+ const phone=document.getElementById('phone').value.trim();
+ const area=document.getElementById('area').value;
+ const address=document.getElementById('address').value.trim();
+ const chosen=[...document.querySelectorAll('[data-product]')].filter(i=>(parseInt(i.value)||0)>0);
+ if(!name||!phone||!area||!address||chosen.length===0){alert('Please enter your name, mobile number, delivery area, full address and at least one product quantity.');return;}
+ const lines=chosen.map(i=>`${i.dataset.product}: ${i.value} case(s)`).join('\\n');
+ alert(`ORDER PREVIEW\\nCustomer: ${name}\\nMobile: ${phone}\\nArea: ${area}\\nAddress: ${address}\\n\\n${lines}\\n\\nRates and delivery charges will be confirmed by the business. This preview has not been sent.`);
+}
+</script>
+<script>
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js').catch(console.error));
+}
+</script>
+</body>
+</html>
